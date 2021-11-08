@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZeTeam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="particles-js"></div>
+<section>
+    <div class="navbar">
+        <div class="nav">
+            <div class="nav-logo">ZeTeam</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li><a href="" class="nav-link">About</a></li>
+                <li><a href="" class="nav-link">Services</a></li>
+                <li><a href="" class="nav-link">Contact</a></li>
+                <li><a href="#team" class="nav-link">Our Team</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
+        </div>
+    </div>
+    <div class="txt">
+        <div class="title">
+            <h1>Web Strategic Agency</h1>
+            <p>Creators of World-Class Websites</p>
+            <button>Discover Now</button>
+        </div>
+        <div class="imgBx">
+            <img src="hero-img.png" alt="">
+        </div>
+    </div>
+</section>
+<!--<section>-->
+<!--    <div class="team" id="team">-->
+<!--        <div class="card">-->
+<!--            <div class="cards">-->
+<!--                <img src="img.jpg" alt="">-->
+<!--                <div class="title">-->
+<!--                    <h3>Abdugafur Abduganiyev</h3>-->
+<!--                    <h4>Frontend developer</h4>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="cards">-->
+<!--                <img src="img.jpg" alt="">-->
+<!--                <div class="title">-->
+<!--                    <h3>Ravshan Ibragimov</h3>-->
+<!--                    <h4>Copyrighting</h4>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="cards">-->
+<!--                <img src="img.jpg" alt="">-->
+<!--                <div class="title">-->
+<!--                    <h3>Davron</h3>-->
+<!--                    <h4>Web Designer</h4>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="cards">-->
+<!--                <img src="img.jpg" alt="">-->
+<!--                <div class="title">-->
+<!--                    <h3>Shohruh Qosimov</h3>-->
+<!--                    <h4>Marketing</h4>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script type="text/javascript">
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener('click', mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

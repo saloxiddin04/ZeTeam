@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #262626;
+    z-index: -3;
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav {
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    margin: 40px 58px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+}
+
+.navbar .nav-logo {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 20px;
+}
+
+.navbar ul li a {
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navbar ul li a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #ffffff;
+    transition: width 0.4s;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.txt {
+    width: 95%;
+    display: flex;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 58px;
+    color: #ffffff;
+}
+
+.imgBx img {
+    margin-top: -50px;
+    margin-left: 90px;
+    width: 580px;
+    height: 450px;
+}
+
+.title {
+    width: 40%;
+}
+
+.txt h1 {
+    font-size: 70px;
+}
+
+.txt p {
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.txt button {
+    outline: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    color: white;
+}
+
+.txt button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+/*.card {*/
+/*    width: 100%;*/
+/*    flex-wrap: wrap;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-top: 100px;*/
+/*}*/
+
+/*.card .cards {*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+/*    text-align: center;*/
+/*    align-items: center;*/
+/*    margin: 20px 20px;*/
+/*    background-color: #fffdf6;*/
+/*    border: 1px solid #fffdf6;*/
+/*    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.20);*/
+/*    overflow: hidden;*/
+/*    transform: scale(1);*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*.card .cards:hover {*/
+/*    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+/*.cards .title {*/
+/*    padding-top: 50px;*/
+/*}*/
+
+/*.cards h3 {*/
+/*    font-size: 24px;*/
+/*}*/
+
+/*.cards h4 {*/
+/*    margin-top: 10px;*/
+/*    font-size: 18px;*/
+/*    color: coral;*/
+/*}*/
+
+/*.cards img {*/
+/*    position: relative;*/
+/*    padding-top: 10px;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+@media screen and (max-width: 768px){
+    .nav-menu {
+        width: 100%;
+        height: 160vh;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background: #262626;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu.active {
+        top: 0;
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        margin-right: 100px;
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bars:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bars:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    #particles-js {
+        position: absolute;
+        width: 768px;
+        height: 160vh;
+    }
+    .navbar ul li {
+        padding: 30px 0;
+    }
+    .txt {
+        flex-wrap: wrap;
+        width: 700px;
+        text-align: center;
+    }
+    .title {
+        width: 100%;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .title p {
+        font-size: 18px;
+    }
+    .title button {
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .imgBx {
+        position: relative;
+        margin-top: 70px;
+    }
+}
+
