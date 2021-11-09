@@ -246,3 +246,47 @@ html {
     }
 }
 
+@media screen and (max-width: 375px) {
+    section {
+        width: 374px;
+        position: relative;
+    }
+    .navbar {
+        width: 370px;
+    }
+    .nav .nav-logo {
+        font-size: 20px;
+    }
+    .nav-menu.active {
+        top: 0;
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .navbar ul li {
+        padding: 50px 0;
+    }
+    #particles-js {
+        display: block;
+        width: 374px;
+        height: 812px;
+    }
+    .txt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 250px 10px;
+        position: absolute;
+        width: 363px;
+        text-align: center;
+    }
+    .imgBx img {
+        margin: 0 10px;
+        position: relative;
+        width: 300px;
+        height: 315px;
+    }
+}
+
